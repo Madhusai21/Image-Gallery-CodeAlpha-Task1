@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="title">
+        <div class="logo">
+            <img src="images/navbar.jpeg" class="img-responsive" alt="Image">
+            <h1> IMAGE GALL<span>ERY </span></h1>        
+        </div>
+    </header>
+    <div class="buttons">
+        <div class="filter-buttons">
+            <button class="active" data-name="all">Show all</button>
+            <button data-name="phones">Phones</button>
+            <button data-name="family">Family</button>
+            <button data-name="child">Child</button>
+            <button data-name="cars">Cars</button>
+            <button data-name="clothes">Clothes</button>
+            <button data-name="machines">Machines</button>
+        </div>
+    </div>
+    
+
+       <div class="gallery">
+        <div class="filter-image" data-name="phones">
+            <img src="images/phones.jpg" alt="phone" onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="phones">
+            <img src="images/phones1.jpg" alt="phone"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="phones">
+            <img src="images/phones2.jpg" alt="phone"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="phones">
+            <img src="images/phones3.jpg" alt="phone"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="clothes">
+            <img src="images/clothes.jpg" alt="clothes"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="clothes">
+            <img src="images/clothes1.jpg" alt="clothes"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="clothes">
+            <img src="images/clothes2.jpg" alt="clothes"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="family">
+            <img src="images/family1.jpg" alt="family"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="family">
+            <img src="images/family2.jpg" alt="family"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="family">
+            <img src="images/family3.jpg" alt="family"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="family">
+            <img src="images/family4.jpg" alt="family"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="cars">
+            <img src="images/car.jpg" alt="car"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="cars">
+            <img src="images/car1.jpg" alt="car"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="cars">
+            <img src="images/car2.jpg" alt="car"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="cars">
+            <img src="images/car3.jpg" alt="car"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="machines">
+            <img src="images/machine1.jpg" alt="machine" onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="machines">
+            <img src="images/machine2.jpg" alt="machine"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="machines">
+            <img src="images/machine3.jpg" alt="machine"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="machines">
+            <img src="images/machine4.jpg" alt="machine"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="child">
+            <img src="images/child1.jpg" alt="child"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="child">
+            <img src="images/child2.jpg" alt="child"onclick="openFullImg(this.src)"/>
+        </div>
+        <div class="filter-image" data-name="child">
+            <img src="images/child3.jpg" alt="child"onclick="openFullImg(this.src)"/>
+        </div>
+    </div>
+    <div class="full-image" id="fullImgBox">
+        <img  src="images/phones.jpg" onclick="openFullImg(this.src)" id="fullImg"/>
+        <span onclick="closeFullImg()">X</span>
+    </div>
+</body>
+</html>
